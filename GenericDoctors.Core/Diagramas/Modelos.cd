@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GenericDoctors.Core.Models.Abono">
+    <Position X="9.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAQAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Abono.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GenericDoctors.Core.Models.CategoriaEnfermedad">
+    <Position X="3.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAgAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CategoriaEnfermedad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GenericDoctors.Core.Models.Cita">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Doctor" Type="GenericDoctors.Core.Models.Doctor" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.75" Y="1.262" />
+        <Point X="7.99" Y="1.262" />
+        <Point X="7.99" Y="1.14" />
+        <Point X="8.25" Y="1.14" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAABAAACARAACAAAAEBAEAASAAIAAAQAAAEACAAQAAI=</HashCode>
+      <FileName>Models\Cita.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Doctor" />
+      <Property Name="Paciente" />
+      <Property Name="CategoriaEnfermedad" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GenericDoctors.Core.Models.Doctor">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAASAAAAAEAEgACAIAAAAAAAAgAAAAAggAAAA=</HashCode>
+      <FileName>Models\Doctor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Consultorio" />
+      <Property Name="TipoDoctor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GenericDoctors.Core.Models.Enfermedad">
+    <Position X="1.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAAQAAAAAAAABAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Enfermedad.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CategoriaEnfermedad" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GenericDoctors.Core.Models.Paciente">
+    <Position X="6.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAQAAAAAEAGAAAAIEAAAAAAAAAQGAAggAAAA=</HashCode>
+      <FileName>Models\Paciente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GenericDoctors.Core.Models.SesionCita">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAIAAACAAAAAAAAAAAAAAgAAEAAAAAABAI=</HashCode>
+      <FileName>Models\SesionCita.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Abono" />
+      <Property Name="Cita" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GenericDoctors.Core.Models.TipoDoctor">
+    <Position X="12" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TipoDoctor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GenericDoctors.Core.Models.PrecioEnfermedad">
+    <Position X="1.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAQIAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PrecioEnfermedad.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Enfermedad" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GenericDoctors.Core.Models.Consultorio">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQQCAQAAAAAAAAAAgAAAgAAAAAAgAAAAAAIAAAA=</HashCode>
+      <FileName>Models\Consultorio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
